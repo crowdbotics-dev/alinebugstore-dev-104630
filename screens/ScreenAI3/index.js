@@ -1,5 +1,5 @@
-import React from 'react';
-import { Text, TextInput, TouchableOpacity, StyleSheet, SafeAreaView } from 'react-native';
+import React from "react";
+import { Text, TextInput, TouchableOpacity, StyleSheet, SafeAreaView } from "react-native";
 
 const LoginScreen = () => {
   return <SafeAreaView style={styles.container}>
@@ -15,36 +15,36 @@ const LoginScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff'
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#fff"
   },
   title: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginBottom: 20
   },
   input: {
-    width: '80%',
+    width: "80%",
     height: 40,
-    borderColor: '#ccc',
+    borderColor: "#ccc",
     borderWidth: 1,
     borderRadius: 5,
     marginBottom: 10,
     paddingHorizontal: 10
   },
   button: {
-    width: '80%',
+    width: "80%",
     height: 40,
-    backgroundColor: '#007AFF',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: "#007AFF",
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 5
   },
   buttonText: {
-    color: '#fff',
+    color: "#fff",
     fontSize: 16,
-    fontWeight: 'bold'
+    fontWeight: "bold"
   }
 });
 export default LoginScreen;
