@@ -1,10 +1,15 @@
+import { useNavigation } from "@react-navigation/native";
+import { Pressable } from "react-native";
 import React from "react";
 import { Text, Image, StyleSheet, SafeAreaView } from "react-native";
 
 const SplashScreen = () => {
+  const navigation = useNavigation();
   return <SafeAreaView style={styles.container}>
       <Image source={require("./bugs.png")} style={styles.logo} />
-      <Text style={styles.title}>Bug Bounty</Text>
+      <Pressable onPress={() => {
+      navigation.navigate("ScreenAI6");
+    }}><Text style={styles.title}>Bug Bounty</Text></Pressable>
       <Text style={styles.subtitle}>Find and report bugs for rewards</Text>
     </SafeAreaView>;
 };
